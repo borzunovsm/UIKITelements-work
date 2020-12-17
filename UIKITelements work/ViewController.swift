@@ -7,10 +7,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = UITableViewCell()
+        cell.backgroundColor = indexPath.row.isMultiple(of: 2) ? .blue : .cyan
+        cell.textLabel?.text = "Row: \(indexPath.row)"
+        return cell
+    }
+    
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var teslaImageVire: UIImageView!
     @IBOutlet weak var poemTextView: UITextView!
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +40,11 @@ class ViewController: UIViewController {
         scrollView.contentSize = imageView.bounds.size
         scrollView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         scrollView.addSubview(imageView)
-        
         view.addSubview(scrollView)
+        
+        //UITableView
+        tableView.backgroundColor = .green
+        tableView.dataSource = self
     }
 
 
