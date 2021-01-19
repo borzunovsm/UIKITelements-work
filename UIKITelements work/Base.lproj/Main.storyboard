@@ -56,13 +56,6 @@
                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UITableViewe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6VK-dM-mlb">
-                                <rect key="frame" x="595" y="571" width="163" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UIImageView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duv-Ce-tHv">
                                 <rect key="frame" x="219" y="180" width="159" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -77,8 +70,60 @@
                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UIScrollView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWt-6H-3aW">
+                                <rect key="frame" x="605" y="53" width="153" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hy-XU-QbK">
+                                <rect key="frame" x="34" y="945" width="1275" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="add" id="CMz-wq-c72"/>
+                                    <barButtonItem systemItem="edit" id="wtm-tT-LPx"/>
+                                    <barButtonItem systemItem="done" id="3w4-Nv-2cZ"/>
+                                    <barButtonItem systemItem="cancel" id="Dux-m7-ABL"/>
+                                    <barButtonItem systemItem="save" id="AmH-CZ-klh"/>
+                                    <barButtonItem systemItem="undo" id="F9B-c1-nlg"/>
+                                    <barButtonItem systemItem="redo" id="pnd-8r-FLS"/>
+                                    <barButtonItem systemItem="flexibleSpace" id="Grx-LX-a0r"/>
+                                    <barButtonItem systemItem="compose" id="gtb-fm-RZe"/>
+                                    <barButtonItem systemItem="reply" id="wTz-S5-g7r"/>
+                                    <barButtonItem systemItem="action" id="IPL-DC-ZeX"/>
+                                    <barButtonItem systemItem="organize" id="uhk-jA-Wuu"/>
+                                    <barButtonItem systemItem="trash" id="qlu-RA-QvY"/>
+                                    <barButtonItem systemItem="flexibleSpace" id="myd-OO-KzB"/>
+                                    <barButtonItem systemItem="bookmarks" id="w3c-1p-jTa"/>
+                                    <barButtonItem systemItem="search" id="ffF-76-UgD"/>
+                                    <barButtonItem systemItem="refresh" id="yHd-9U-RQU"/>
+                                    <barButtonItem systemItem="stop" id="ziL-BC-8RD"/>
+                                    <barButtonItem systemItem="flexibleSpace" id="RSD-5I-rXh"/>
+                                    <barButtonItem systemItem="camera" id="7aH-rN-LCf"/>
+                                    <barButtonItem systemItem="flexibleSpace" id="giw-0Y-dl6"/>
+                                    <barButtonItem systemItem="play" id="nUu-Wr-lkD"/>
+                                    <barButtonItem systemItem="pause" id="sIT-RP-3qL"/>
+                                    <barButtonItem systemItem="rewind" id="sxz-OC-tD3"/>
+                                    <barButtonItem systemItem="fastForward" id="4i8-qQ-Leu"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UIToolBar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQI-gn-phB">
+                                <rect key="frame" x="627" y="910" width="112" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UITableViewe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6VK-dM-mlb">
+                                <rect key="frame" x="627" y="222" width="163" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OV2-VK-KLz">
-                                <rect key="frame" x="556" y="613" width="240" height="318"/>
+                                <rect key="frame" x="588" y="264" width="240" height="318"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -109,13 +154,6 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UIScrollView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWt-6H-3aW">
-                                <rect key="frame" x="605" y="53" width="153" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
