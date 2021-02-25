@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ARu-OR-iIV">
     <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--UINavigationController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIKITelements_work" customModuleProvider="target" sceneMemberID="viewController">
@@ -56,6 +56,13 @@
                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UITableView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6VK-dM-mlb">
+                                <rect key="frame" x="627" y="222" width="149" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UIImageView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duv-Ce-tHv">
                                 <rect key="frame" x="219" y="180" width="159" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -65,58 +72,6 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UITextView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBh-od-WtJ">
                                 <rect key="frame" x="86" y="562" width="136" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UIScrollView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWt-6H-3aW">
-                                <rect key="frame" x="605" y="53" width="153" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <color key="textColor" systemColor="systemOrangeColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hy-XU-QbK">
-                                <rect key="frame" x="34" y="945" width="1275" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                                <items>
-                                    <barButtonItem systemItem="add" id="CMz-wq-c72"/>
-                                    <barButtonItem systemItem="edit" id="wtm-tT-LPx"/>
-                                    <barButtonItem systemItem="done" id="3w4-Nv-2cZ"/>
-                                    <barButtonItem systemItem="cancel" id="Dux-m7-ABL"/>
-                                    <barButtonItem systemItem="save" id="AmH-CZ-klh"/>
-                                    <barButtonItem systemItem="undo" id="F9B-c1-nlg"/>
-                                    <barButtonItem systemItem="redo" id="pnd-8r-FLS"/>
-                                    <barButtonItem systemItem="flexibleSpace" id="Grx-LX-a0r"/>
-                                    <barButtonItem systemItem="compose" id="gtb-fm-RZe"/>
-                                    <barButtonItem systemItem="reply" id="wTz-S5-g7r"/>
-                                    <barButtonItem systemItem="action" id="IPL-DC-ZeX"/>
-                                    <barButtonItem systemItem="organize" id="uhk-jA-Wuu"/>
-                                    <barButtonItem systemItem="trash" id="qlu-RA-QvY"/>
-                                    <barButtonItem systemItem="flexibleSpace" id="myd-OO-KzB"/>
-                                    <barButtonItem systemItem="bookmarks" id="w3c-1p-jTa"/>
-                                    <barButtonItem systemItem="search" id="ffF-76-UgD"/>
-                                    <barButtonItem systemItem="refresh" id="yHd-9U-RQU"/>
-                                    <barButtonItem systemItem="stop" id="ziL-BC-8RD"/>
-                                    <barButtonItem systemItem="flexibleSpace" id="RSD-5I-rXh"/>
-                                    <barButtonItem systemItem="camera" id="7aH-rN-LCf"/>
-                                    <barButtonItem systemItem="flexibleSpace" id="giw-0Y-dl6"/>
-                                    <barButtonItem systemItem="play" id="nUu-Wr-lkD"/>
-                                    <barButtonItem systemItem="pause" id="sIT-RP-3qL"/>
-                                    <barButtonItem systemItem="rewind" id="sxz-OC-tD3"/>
-                                    <barButtonItem systemItem="fastForward" id="4i8-qQ-Leu"/>
-                                </items>
-                            </toolbar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UIToolBar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQI-gn-phB">
-                                <rect key="frame" x="627" y="910" width="112" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UITableViewe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6VK-dM-mlb">
-                                <rect key="frame" x="627" y="222" width="163" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" systemColor="systemOrangeColor"/>
@@ -154,11 +109,101 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6hy-XU-QbK">
+                                <rect key="frame" x="34" y="945" width="1275" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="add" id="CMz-wq-c72"/>
+                                    <barButtonItem systemItem="edit" id="wtm-tT-LPx"/>
+                                    <barButtonItem systemItem="done" id="3w4-Nv-2cZ"/>
+                                    <barButtonItem systemItem="cancel" id="Dux-m7-ABL"/>
+                                    <barButtonItem systemItem="save" id="AmH-CZ-klh"/>
+                                    <barButtonItem systemItem="undo" id="F9B-c1-nlg"/>
+                                    <barButtonItem systemItem="redo" id="pnd-8r-FLS"/>
+                                    <barButtonItem systemItem="flexibleSpace" id="Grx-LX-a0r"/>
+                                    <barButtonItem systemItem="compose" id="gtb-fm-RZe"/>
+                                    <barButtonItem systemItem="reply" id="wTz-S5-g7r"/>
+                                    <barButtonItem systemItem="action" id="IPL-DC-ZeX"/>
+                                    <barButtonItem systemItem="organize" id="uhk-jA-Wuu"/>
+                                    <barButtonItem systemItem="trash" id="qlu-RA-QvY"/>
+                                    <barButtonItem systemItem="flexibleSpace" id="myd-OO-KzB"/>
+                                    <barButtonItem systemItem="bookmarks" id="w3c-1p-jTa"/>
+                                    <barButtonItem systemItem="search" id="ffF-76-UgD"/>
+                                    <barButtonItem systemItem="refresh" id="yHd-9U-RQU"/>
+                                    <barButtonItem systemItem="stop" id="ziL-BC-8RD"/>
+                                    <barButtonItem systemItem="flexibleSpace" id="RSD-5I-rXh"/>
+                                    <barButtonItem systemItem="camera" id="7aH-rN-LCf"/>
+                                    <barButtonItem systemItem="flexibleSpace" id="giw-0Y-dl6"/>
+                                    <barButtonItem systemItem="play" id="nUu-Wr-lkD"/>
+                                    <barButtonItem systemItem="pause" id="sIT-RP-3qL"/>
+                                    <barButtonItem systemItem="rewind" id="sxz-OC-tD3"/>
+                                    <barButtonItem systemItem="fastForward" id="4i8-qQ-Leu">
+                                        <connections>
+                                            <segue destination="deB-Rh-QAx" kind="show" id="OZT-5C-jgv"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UIToolBar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQI-gn-phB">
+                                <rect key="frame" x="627" y="910" width="112" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UIScrollView" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fWt-6H-3aW">
+                                <rect key="frame" x="607" y="65" width="153" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UIButton" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sq7-ba-RCQ">
+                                <rect key="frame" x="935" y="66" width="107" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UISegmentedControl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxk-Js-PEa">
+                                <rect key="frame" x="931" y="202" width="178" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wcp-wO-StN">
+                                <rect key="frame" x="931" y="118" width="114" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Count: 99999">
+                                    <color key="titleColor" systemColor="systemRedColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BIN-bk-aMl"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="EzP-e1-0b8">
+                                <rect key="frame" x="923" y="253" width="186" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="Reset"/>
+                                    <segment title=" -"/>
+                                    <segment title="+"/>
+                                </segments>
+                                <color key="selectedSegmentTintColor" systemColor="systemTealColor"/>
+                                <connections>
+                                    <action selector="UISegmentSelected:" destination="BYZ-38-t0r" eventType="valueChanged" id="SXA-gx-hcq"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="UINavigationController" id="rBq-l6-NkF"/>
                     <connections>
+                        <outlet property="button" destination="wcp-wO-StN" id="ewK-qe-A65"/>
                         <outlet property="label" destination="1H2-Z1-rO3" id="nlg-cT-Nfm"/>
                         <outlet property="poemTextView" destination="zft-wF-Td2" id="B64-J6-l2b"/>
                         <outlet property="tableView" destination="OV2-VK-KLz" id="Ft3-oM-c8G"/>
@@ -167,7 +212,97 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="831.47877013177151" y="98.4375"/>
+        </scene>
+        <!--YellowViewController-->
+        <scene sceneID="a69-yS-GiQ">
+            <objects>
+                <viewController id="7u0-TH-FFO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6h0-gk-YFX">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="S3h-A5-xHb"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Yellow" badgeValue="Yellow" id="yIZ-0s-1Hf"/>
+                    <navigationItem key="navigationItem" title="YellowViewController" id="AYh-6L-NFl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="swY-ZK-aLr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2182" y="-521"/>
+        </scene>
+        <!--blue view controller-->
+        <scene sceneID="qzg-vD-WjP">
+            <objects>
+                <viewController id="oVZ-r3-VVe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TEb-Ng-KRM">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rNC-cW-6FS"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Blue" id="myB-H4-1el"/>
+                    <navigationItem key="navigationItem" title="blue view controller" id="cEx-5q-cmf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1jH-by-rmw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2182" y="169"/>
+        </scene>
+        <!--velvet view controller-->
+        <scene sceneID="a52-wO-1y0">
+            <objects>
+                <viewController id="T4v-ZH-LRe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gld-Sg-IXp">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="f5J-P3-Ht2"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="velvet" badgeValue="+1" id="Rk5-ha-cRB"/>
+                    <navigationItem key="navigationItem" title="velvet view controller" id="bP7-Dh-T8U"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jnI-4P-UfP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2182" y="869"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="k6r-QD-XXh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ARu-OR-iIV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="7Tj-2s-mzU">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Day-qU-bMa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kHh-3Q-k5a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="137.48169838945827" y="98.4375"/>
+        </scene>
+        <!--Color Lights controller-->
+        <scene sceneID="iFI-eP-D3M">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="deB-Rh-QAx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Color Lights controller" id="SCo-D0-Z0Z"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZKr-ro-CXE">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="7u0-TH-FFO" kind="relationship" relationship="viewControllers" id="zrD-hd-1nr"/>
+                        <segue destination="oVZ-r3-VVe" kind="relationship" relationship="viewControllers" id="owz-QB-Hbp"/>
+                        <segue destination="T4v-ZH-LRe" kind="relationship" relationship="viewControllers" id="lkB-Vg-FtA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W3z-bp-0Mp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1478.9165446559296" y="97.8515625"/>
         </scene>
     </scenes>
     <resources>
@@ -181,8 +316,20 @@
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

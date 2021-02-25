@@ -8,6 +8,13 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource {
+    
+    var count = 0{
+        didSet{
+            updateButton()
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
@@ -23,6 +30,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     @IBOutlet weak var teslaImageVire: UIImageView!
     @IBOutlet weak var poemTextView: UITextView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var button: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,8 +53,34 @@ class ViewController: UIViewController, UITableViewDataSource {
         //UITableView
         tableView.backgroundColor = .green
         tableView.dataSource = self
+        
+        //UIBUtton
+        updateButton()
+    }
+    
+    func updateButton(){
+        button.setTitle("Count: \(count)", for: [])
+        
     }
 
-
+    @IBAction func buttonPressed(_ sender: UIButton) {
+        count += 1
+    }
+    
+    @IBAction func UISegmentSelected(_ sender: UISegmentedControl) {
+        //print(#line, #function, sender.selectedSegmentIndex)
+        switch sender.selectedSegmentIndex{
+        case 0:
+            count = 0
+        case 1:
+            count -= 1
+        case 2:
+            count += 1
+        default:
+            fatalError("Unknown index \(sender.selectedSegmentIndex) in \(#line), \(#function)")
+            
+        }
+    }
+    
 }
 
