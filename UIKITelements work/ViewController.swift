@@ -82,5 +82,19 @@ class ViewController: UIViewController, UITableViewDataSource {
         }
     }
     
+    @IBAction func dataEntered(_ sender: UITextField) {
+        print(#line, #function, sender.tag, sender.text ?? "nil")
+    }
+    
+    @IBAction func slderValueChanged(_ sender: UISlider) {
+        
+        sender.value = Float(25 * Int(sender.value / 25))
+        print(#line, #function, sender.value)
+    }
+    
+    
+    @IBAction func datePicked(_ sender: UIDatePicker) {
+        print(#line, #function, sender.date)
+    }
 }
 
