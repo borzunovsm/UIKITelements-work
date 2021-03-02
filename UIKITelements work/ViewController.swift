@@ -93,6 +93,11 @@ class ViewController: UIViewController, UITableViewDataSource {
     }
     
     
+    @IBAction func switchToggled(_ sender: UISwitch) {
+        //print(#line, #function, sender.isOn)
+        view.backgroundColor = sender.isOn ? .white : .cyan
+    }
+    
     @IBAction func datePicked(_ sender: UIDatePicker) {
         print(#line, #function, sender.date)
     }
